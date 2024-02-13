@@ -1,0 +1,43 @@
+.about-wrap{
+    display: flex;
+}
+.about-list{
+    display: flex;
+    margin-right: 64px;
+}
+.about-item + .about-item {
+    margin-left: 30px;
+}
+.about-pre-text {
+    color: $third-text-color;
+    margin-bottom: 20px;
+}
+.about-pre-text::before {
+    background-color: #303030;
+}
+.section-title {
+font-family: 'Raleway', 'sans-serif';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+margin-bottom: 20px;
+}
+.about-content{
+    max-width: 500px;
+}
+.about-title {
+    color:$secondary-title-color;
+}
+.about-after-text {
+    color: $main-text-color;
+    margin-bottom: 20px;
+}
+.about-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: $main-text-color;
+margin-bottom: 40px;
+}

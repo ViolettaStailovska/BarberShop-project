@@ -1,0 +1,176 @@
+.header {
+    background-color: grey;
+}
+
+.header-list {
+    width: 388px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-item {
+    display: flex;
+    justify-content: space-between;
+}
+.header-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+.header-link {
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    &:hover{
+        color: $accent-color;
+    }
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}   
+.logo-item{
+    fill: #303030;
+}
+.header-logo{
+    margin-right: 70px;
+}
+.header-right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-tel {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-right: 40px;
+}
+.btn {
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #303030;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background-color: transparent;
+    &:hover{
+        background-color: $accent-color;
+        color:#FFFFFF;
+    }
+    &:focus{
+        background-color: $accent-color;
+        color:#FFFFFF;
+    }
+    
+}
+.header-button{
+    color: #FFFFFF;
+}
+.hero-container {
+    display: flex;
+}
+.hero-main {
+    background-color: grey;
+    flex-grow: 1;
+    padding: 272px 0 206px 91px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2),rgba(25, 28, 38, 0.2)), url(../images/desktop/hero-1x.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+.hero-list{
+    width: 100px;
+    display: flex;
+}
+.hero-list::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    background-color: #303030;
+}
+.hero-item-link{
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.2em;
+color: $third-text-color;
+// transform: rotate(-90deg);
+
+}
+.pre-text {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+}
+.pre-text::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 21px;
+
+}
+.after-text {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+}
+.hero-pre-text {
+color: rgba(157, 164, 189, 0.6);
+margin-bottom: 20px;
+
+}
+.hero-pre-text::before {
+    background-color: rgba(157, 164, 189, 0.6);
+
+}
+.hero-title {
+font-family: 'Raleway', 'sans-serif';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 1.18;
+letter-spacing: 0.05em;
+color: $main-title-color;
+margin-bottom: 20px;
+}
+.hero-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: $secondary-text-color;
+}

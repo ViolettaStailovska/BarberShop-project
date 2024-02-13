@@ -1,0 +1,45 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  
+    // @media screen and (min-width: 480px) {
+    //   width: 480px;
+    // }
+  
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+    //   padding-left: 39px;
+    //   padding-right: 39px;
+    // }
+  
+    // @media screen and (min-width: 1225px) {
+    //   width: 1225px;
+    //   padding-left: 55px;
+    //   padding-right: 55px;
+    // }
+  }
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  body.modal-open {
+    overflow: hidden;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
