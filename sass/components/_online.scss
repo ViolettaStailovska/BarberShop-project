@@ -1,6 +1,88 @@
 .online {
-    background-color: #303030;
+    padding-right: 40px;
+    padding-bottom: 193px;
 }
 .online-title {
     color: $main-title-color;
+    margin-bottom: 44px;
+}
+.contact-wrapper .container {
+    display: flex;
+}
+.contact-wrapper {
+    background-color: #191C26;
+    background-image: url(../images/desktop/contacts-bg-1x.png);
+    background-size: 50% auto;
+    background-position: right center; 
+    background-repeat: no-repeat;
+}
+.online-input {
+    padding-bottom: 8px;
+    width: 270px;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    background-color: transparent;
+    margin-bottom: 44px;
+    outline: none;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &:hover {
+        border-bottom: 1px solid #ffffff;
+    }
+    &:hover::placeholder {
+
+        color: #ffffff;
+    }
+    &:focus {
+        border-bottom: 1px solid #ffffff;
+    }
+    &:focus::placeholder {
+
+        color: #ffffff;
+    }
+}
+    ::placeholder {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.1em;
+    color: rgba(157, 164, 189, 0.4);
+}
+.online-input.small {
+    width: 260px;
+    margin-right: 0;
+}
+.online-message {
+    width: 560px;
+    height: 76px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    resize: none;
+    margin-bottom: 44px;
+    outline: none;
+    &:hover {
+        border-bottom: 1px solid #ffffff;
+    }
+    &:hover::placeholder {
+
+        color: #ffffff;
+    }
+    &:focus {
+        border-bottom: 1px solid #ffffff;
+    }
+    &:focus::placeholder {
+
+        color: #ffffff;
+    }
+}
+.online-btn {
+    color: #ffffff;
+}
+.online-input:hover .online-input::placeholder {
+    color: #ffffff;
 }

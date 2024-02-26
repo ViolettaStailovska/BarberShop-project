@@ -8,7 +8,7 @@
 .masters-pre-text::before {
    background-color: #303030;
 }
-.masters-title {
+.masters__title {
    color: $secondary-title-color;
    margin-bottom: 44px;
 }
@@ -17,15 +17,41 @@
    flex-wrap: wrap;
    margin-left: -30px;
 }
-.masters-item{
+.masters-list__item{
    width: 370px;
    flex-basis: ((100% - 3 * 30)/3);
    margin-left: 30px;
+   &:hover {
+      .masters-top-text {
+          transform: translateY(0%);
+      }
+     
+   }
 }
-.masters-item-content{
+.masters-list__overlay {
+   position: relative;
+   overflow: hidden;
+}
+.masters-list__top-text {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height:100%;
+   padding: 20px;
+   color: #ffffff;
+   background-color: rgba(248, 181, 56, 0.7);
+   overflow: auto;
+   transform: translateY(100%);
+   transition: transform 500ms linear;
+   // &:hover {
+   //    transform: translateY(0%);
+   // }
+}
+.masters-list__content{
    margin-top: 30px;
+   padding-bottom: 30px;
 }
-.masters-item-title {
+.masters-list__title {
 font-weight: 400;
 font-size: 18px;
 line-height: 1.39;
@@ -34,7 +60,7 @@ letter-spacing: 0.02em;
 color: $third-text-color;
 margin-bottom: 8px;
 }
-.masters-item-text {  
+.masters-list__text {  
 font-weight: 400;
 font-size: 14px;
 line-height: 1.36;
@@ -47,7 +73,7 @@ margin-bottom: 30px;
    display: flex;
    justify-content: center;
 }
-.socials-link {
+.socials-list__link {
    width: 44px;
    height: 44px;
    display: flex;
@@ -55,17 +81,21 @@ margin-bottom: 30px;
    align-items: center;
    border-radius: 50%;
    background-color: #ffffff;
+   transition: background-color 500ms linear;
    &:hover {
-      .socials-icon {
+      .socials-list__icon {
          fill:$accent-color;
       }
    }
    &:focus {
-      .socials-icon {
+      .socials-list__icon {
          fill:$accent-color;
       }
    }
 }
-.socials-item:not(:last-child) {
+.socials-list__item {
+   transition: fill 500ms linear;
+}
+.socials-list__item:not(:last-child) {
    margin-right: 10px;
 }

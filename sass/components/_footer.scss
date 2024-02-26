@@ -1,9 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px auto;
+
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+    
+    &::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 1px;
+        background-color: #303030;
+        margin-right: 40px;
+        flex-shrink: 0;
+    }
+    
+}
+
+.footer-item {
+    &:not(:last-child){
+        margin-right: 40px;
+    }
+
+}
+
 .footer-text {
 font-weight: 600;
 font-size: 11px;
 line-height: 1.36;
 letter-spacing: 0.2em;
 color: $secondary-text-color;
+margin-left: 46px;
 }
 .footer-link {
 font-weight: 600;

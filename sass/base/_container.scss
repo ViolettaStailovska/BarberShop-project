@@ -43,3 +43,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+@keyframes shake {
+  0% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: translate(-10px);
+  }
+}
